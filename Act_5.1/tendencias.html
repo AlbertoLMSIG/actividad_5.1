@@ -4,9 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    Hola
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Descripción del logo">
+          </a>
+        </div>
+        <nav>
+          <input type="checkbox" id="toggle-menu" class="toggle-menu">
+          <label for="toggle-menu" class="toggle-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="menu">
+            <li><a href="https://www.incibe.es/" target="_blank">Productos</a></li>
+            <li>
+              <a href="https://www.osi.es/es" target="_blank">Casa y Hogar</a>
+            </li>
+            <li>
+              <a href="#">Tendencias y Futuro</a>
+              <input type="checkbox" id="toggle-submenu" class="toggle-submenu">
+              <ul class="submenu">
+                <li><a href="tendencias.html">Tendencias</a></li>
+                <li>
+                  <a href="https://incual.educacion.gob.es/" target="_blank">Simulaciones en 3D</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="languages">
+          <ul>
+            <li><a href="#" lang="en">English</a></li>
+            <li><a href="#" lang="fr">Français</a></li>
+            <li><a href="#" lang="de">Deutsch</a></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <!-- Contenido de la página -->
+        <div id="contenido">
+          <div id="zona1">
+            <img src="images/logo2.jpeg" alt="Mas Vendido">
+            <div id="sub">
+              <p><hr><b>Logo Castillo</b><hr>59€<hr>5<hr></p>
+            </div>
+          </div>
+          
+          <div id="zona2">
+            <table>
+              <thead>
+                <tr>
+                  <th>Producto</th>
+                  <th>Número de visitas</th>
+                  <th>Numeros de Likes</th>
+                  <th>Valoración media de los clientes.</th>
+                  <th>Número de unidades en stock.</th>
+                  <th>Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lego Zoo</td>
+                  <td>567</td>
+                  <td>674</td>
+                  <td>5</td>
+                  <td>787</td>
+                  <td>50€</td>
+                </tr>
+                <tr>
+                  <td>Lego Farmacia</td>
+                  <td>764</td>
+                  <td>143</td>
+                  <td>5</td>
+                  <td>843</td>
+                  <td>79€</td>
+                </tr>
+                <tr>
+                  <td>Legoo Veterinario</td>
+                  <td>700</td>
+                  <td>800</td>
+                  <td>9</td>
+                  <td>900</td>
+                  <td>45€</td>
+                </tr>
+                <tr>
+                  <td>Legoo Bomberos</td>
+                  <td>100</td>
+                  <td>200</td>
+                  <td>3</td>
+                  <td>200</td>
+                  <td>79€</td>
+                </tr>
+                <tr>
+                  <td>Legoo Policia</td>
+                  <td>200</td>
+                  <td>300</td>
+                  <td>3</td>
+                  <td>400</td>
+                  <td>50€</td>
+                </tr>
+                <tr>
+                  <th>Total</th>
+                  <td>678</td>
+                  <td>900</td>
+                  <td>5</td>
+                  <td>900</td>
+                  <td>7467€</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+          </div>
+          <div id="zona3">
+            <ul>
+              <li>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</li>
+              <li>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</li>
+              <li>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</li>
+              <li>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</li>
+              <li>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</li>
+              <li>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</li>
+              <li>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</li>
+              <li>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</li>
+            </ul>
+          </div>
+          <div id="zona4">
+            <form>
+              <fieldset>
+                <legend>Formulario de Opiniones y suscripciones</legend>
+                <div>
+                  <label for="nick">Nick (máx. 8 caracteres):</label>
+                  <input type="text" id="nick" name="nick" maxlength="8" required>
+                </div>
+                <div>
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" id="email" name="email" required">
+                </div>
+                <div>
+                  <label for="productos">Productos que más te han gustado:</label>
+                  <select id="productos" name="productos" multiple>
+                    <option value="1">Lego Zoo</option>
+                    <option value="2">Lego Policia</option>
+                    <option value="3">Lego Farmacia</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="cp">Código Postal:</label>
+                  <input type="text" id="cp" name="cp" pattern="[0-4][0-9]{4}" required>
+                </div>
+                <div>
+                  <span>Redes sociales:</span>
+                  <br>
+                  
+                  <label for="rs1">Facebook <input type="checkbox" id="rs1" name="rs1" value="facebook"></label>
+                  
+                  <label for="rs2">Twitter <input type="checkbox" id="rs2" name="rs2" value="twitter"></label>
+                  
+                  <label for="rs3">Instagram <input type="checkbox" id="rs3" name="rs3" value="instagram"></label>
+                </div>
+                <div>
+                  <span>Te gustaria que trajeran mas cosas los juegos?</span><br>
+                  <label for="si">Sí <input type="radio" id="si" name="montaje" value="si" required></label>
+                  <label for="no">No <input type="radio" id="no" name="montaje" value="no"></label>
+                </div>
+                <div>
+                  <button type="submit">Enviar</button>
+                  <button type="reset">Cancelar</button>
+                </div>
+              </fieldset>
+            </form>
+            
+          </div>
+        </div>
+      </main>
+      <footer>
+        Alberto Marquez Mendoza
+      </footer>
 </body>
 </html>
