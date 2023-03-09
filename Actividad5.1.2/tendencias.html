@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Descripción del logo">
+          </a>
+        </div>
+        <nav>
+          <input type="checkbox" id="toggle-menu" class="toggle-menu">
+          <label for="toggle-menu" class="toggle-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="menu">
+            <li><a href="https://www.incibe.es/" target="_blank">Productos</a></li>
+            <li>
+              <a href="https://www.osi.es/es" target="_blank">Casa y Hogar</a>
+            </li>
+            <li>
+              <a href="#">Tendencias y Futuro</a>
+              <input type="checkbox" id="toggle-submenu" class="toggle-submenu">
+              <ul class="submenu">
+                <li><a href="tendencias.html">Tendencias</a></li>
+                <li>
+                  <a href="https://incual.educacion.gob.es/" target="_blank">Simulaciones en 3D</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="languages">
+          <ul>
+            <li><a href="#" lang="en">English</a></li>
+            <li><a href="#" lang="fr">Français</a></li>
+            <li><a href="#" lang="de">Deutsch</a></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <!-- Contenido de la página -->
+        <div id="contenido">
+          <div id="zona1">
+            <img src="img/masv.jpg" alt="Mas Vendido">
+            <div id="sub">
+              <p><hr><b>As bestas.</b><hr>25€<hr>4,1 Estrellas de 5<hr></p>
+            </div>
+          </div>
+          
+          <div id="zona2">
+            <table>
+              <thead>
+                <tr>
+                  <th>Producto</th>
+                  <th>Cantidad de Visitas</th>
+                  <th>Cantidad de Likes</th>
+                  <th>Valoración</th>
+                  <th>Stock</th>
+                  <th>Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Libro</td>
+                  <td>1000</td>
+                  <td>1000</td>
+                  <td>4</td>
+                  <td>1000</td>
+                  <td>25€</td>
+                </tr>
+                <tr>
+                  <td>Movil</td>
+                  <td>800</td>
+                  <td>800</td>
+                  <td>4</td>
+                  <td>800</td>
+                  <td>432€</td>
+                </tr>
+                <tr>
+                  <td>Gráfica</td>
+                  <td>600</td>
+                  <td>600</td>
+                  <td>4</td>
+                  <td>600</td>
+                  <td>345€</td>
+                </tr>
+                <tr>
+                  <td>Pantalla</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>4</td>
+                  <td>500</td>
+                  <td>279€</td>
+                </tr>
+                <tr>
+                  <td>Portatil</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>4</td>
+                  <td>400</td>
+                  <td>250€</td>
+                </tr>
+                <tr>
+                  <th>Total</th>
+                  <td>3300</td>
+                  <td>3300</td>
+                  <td>4</td>
+                  <td>3300</td>
+                  <td>1581€</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+          </div>
+          <div id="zona3">
+            <ul>
+              <li>Los colores suaves y cálidos como el beige, el rosa y el gris son populares en la decoración de interiores en la actualidad.</li>
+              <li>Los tonos pastel también están en tendencia, así como los tonos de joyas, como el verde esmeralda y el zafiro.</li>
+              <li>Los muebles con acabados en tonos claros como el roble natural, el nogal y la madera blanca son populares en la actualidad.</li>
+              <li>Los sofás con diseños modernos y minimalistas son una opción popular en la decoración contemporánea, y los muebles multifuncionales y plegables son cada vez más comunes.</li>
+              <li>Los textiles como las mantas, los cojines y las alfombras con texturas son una tendencia popular en la decoración de interiores.</li>
+              <li>Los detalles en cobre, oro rosa y bronce también son una opción popular para los accesorios decorativos.</li>
+              <li>Los diseños minimalistas y modernos son una tendencia popular en la decoración de interiores.</li>
+              <li>Los diseños inspirados en la naturaleza y el uso de materiales sostenibles también están ganando popularidad.</li>
+            </ul>
+          </div>
+          <div id="zona4">
+            <form>
+              <fieldset>
+                <legend>Opiniones y suscripciones</legend>
+                <div>
+                  <label for="nick">Nick o identificador (máx. 8 caracteres):</label>
+                  <input type="text" id="nick" name="nick" maxlength="8" required>
+                </div>
+                <div>
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" id="email" name="email" required placeholder="ejemplo@ejemplo.com">
+                </div>
+                <div>
+                  <label for="productos">Productos que más te han gustado:</label>
+                  <select id="productos" name="productos" multiple>
+                    <option value="1">Mueble A</option>
+                    <option value="2">Lámpara B</option>
+                    <option value="3">Sofá C</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="cp">Código Postal de residencia:</label>
+                  <input type="text" id="cp" name="cp" pattern="[0-4][0-9]{4}" required>
+                </div>
+                <div>
+                  <span>Redes sociales que sigues habitualmente:</span>
+                  
+                  <label for="rs1">Facebook <input type="checkbox" id="rs1" name="rs1" value="facebook"></label>
+                  
+                  <label for="rs2">Twitter <input type="checkbox" id="rs2" name="rs2" value="twitter"></label>
+                  
+                  <label for="rs3">Instagram <input type="checkbox" id="rs3" name="rs3" value="instagram"></label>
+                </div>
+                <div>
+                  <span>¿Contratarías servicio de montaje de muebles en caso de realizar un pedido?</span><br>
+                  <label for="si">Sí <input type="radio" id="si" name="montaje" value="si" required></label>
+                  <label for="no">No <input type="radio" id="no" name="montaje" value="no"></label>
+                </div>
+                <div>
+                  <button type="submit">Enviar</button>
+                  <button type="reset">Cancelar</button>
+                </div>
+              </fieldset>
+            </form>
+            
+          </div>
+        </div>
+      </main>
+      <footer>
+        <!-- Contenido del pie de página -->
+        Footer de la pagina
+      </footer>
+</body>
+</html>
